@@ -1,0 +1,329 @@
+*
+{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Cabin';
+    src: url(resources/fonts/Cabin-Regular.ttf);
+}
+
+:root
+{
+    /* Color Palette */
+    --c1: #2A2B2A;
+    --c2: #F1DAC4;
+    --c3: #FFFFFF;
+    --c4: #8E7C93;
+    --c5: #FF6663;
+}
+
+input[type=text]
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: Cabin;
+    font-size: 18px;
+    border-width: 0;
+}
+
+input[type=submit]
+{
+    background-color: var(--c5);
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 15px;
+
+    text-align: center;
+    font-family: "Cabin";
+    font-size: 18px;
+    color: var(--c3);
+    border-width: 0;
+}
+
+input[type=submit]:hover
+{
+    background-color: #d15250;
+
+}
+
+input:focus { outline: none; border: #d15250 2px solid; } 
+
+textarea
+{
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+    font-family: Cabin;
+    font-size: 18px;
+    padding: 10px;
+    border-width: 0;
+}
+
+textarea:focus { outline: none; border: #d15250 2px solid; } 
+
+body
+{
+    margin: 0;
+    background-color: var(--c1);
+}
+
+header
+{
+    text-align: center;
+    position: relative;
+    padding-top: 37.5%;
+    overflow: hidden;
+}
+
+main
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1
+{
+    font-family: "Cabin";
+    font-size: 40px;
+    color: var(--c3);
+}
+
+h2
+{
+    font-family: "Cabin";
+    font-size: 20px;
+    color: var(--c3);
+}
+
+p
+{
+    font-family: "Cabin";
+    font-size: 18px;
+    color: var(--c3);
+}
+
+a { color: inherit; text-decoration: none;} 
+
+video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-position: center;
+    object-fit: cover;
+}
+
+.profile
+{
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    border-radius: 50%;
+
+}
+
+.gallery
+{
+    margin: auto;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.gallery .gallery-element
+{
+    margin: auto;
+    display: inline-block;
+    width: 30%;
+    height: 85%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .demo-element
+{
+    margin: auto;
+    display: inline-block;
+    width: 45%;
+    height: 85%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .gallery-element .element-image
+{
+    text-align: center;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gallery .demo-element .demo-image
+{
+    text-align: center;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gallery .gallery-element .element-description
+{
+    background-color: var(--c5);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 15px;
+
+    text-align: center;
+    font-family: "Cabin";
+    font-size: 18px;
+    color: var(--c3);
+}
+
+.gallery .demo-element .demo-description
+{
+    background-color: var(--c5);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 15px;
+
+    text-align: center;
+    font-family: "Cabin";
+    font-size: 18px;
+    color: var(--c3);
+}
+
+.button
+{
+    background-color: var(--c5);
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 15px;
+
+    text-align: center;
+    font-family: "Cabin";
+    font-size: 18px;
+    color: var(--c3);
+}
+
+.gallery .gallery-element .element-description:hover
+{
+    background-color: #d15250;
+}
+
+.gallery .demo-element .demo-description:hover
+{
+    background-color: #d15250;
+}
+
+.button:hover
+{
+    background-color: #d15250;
+}
+
+.solid
+{
+    clear: both;
+    border-top: 5px solid var(--c3);
+}
+
+.center
+{
+    margin: auto;
+    width: 60%;
+}
+
+.layout-tool
+{
+    
+    border-color: #d15250;
+    border-style: solid;
+    
+}
+
+@media only screen and (max-width:1120px)
+{
+    .profile
+    {
+        text-align: center;
+        margin: auto;
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    .gallery .gallery-element
+    {
+        margin: auto;
+        display: block;
+        width: 85%;
+        height: 85%;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery .demo-element
+    {
+        margin: auto;
+        display: block;
+        width: 85%;
+        height: 85%;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery .demo-element .demo-image
+    {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
